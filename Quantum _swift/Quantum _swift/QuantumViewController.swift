@@ -11,11 +11,16 @@ import JavaScriptCore
 
 
 @objc class JSModelSwift:NSObject,JSBridgeProtocol {
-    weak var jsContext:JSContext?
+   
+    var jsContext:JSContext!
     
+    func auth(data: Any) {
+    print("-----微信登录------")
+    }
 
     func setTitle(data: Any) {
-        
+    print("----- 设置标题------")
+
     }
     
     func getNavValue(data: Any) {
@@ -173,13 +178,13 @@ import JavaScriptCore
         super.viewDidLoad()
         self.navigationItem.title = "首页";
         
-        webView = UIWebView(frame: CGRect(x: 0, y: 64, width: 375, height: 640))
-        webView?.delegate = self
-        webView?.backgroundColor = UIColor.groupTableViewBackground
-        webView?.keyboardDisplayRequiresUserAction = false
-        webView?.scrollView.decelerationRate = UIScrollViewDecelerationRateNormal
+        self.webView = UIWebView(frame: CGRect(x: 0, y: 64, width: 375, height: 640 - 64))
+        self.webView.delegate = self
+        self.webView.backgroundColor = UIColor.groupTableViewBackground
+        self.webView.keyboardDisplayRequiresUserAction = false
+        self.webView.scrollView.decelerationRate = UIScrollViewDecelerationRateNormal
         
-       let url = NSURL(string: self.app_url!)
+        let url = NSURL(string: self.app_url!)
         let request = NSURLRequest(url: url! as URL, cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData, timeoutInterval: 30)
         
         self.webView?.loadRequest(request as URLRequest)
@@ -190,7 +195,7 @@ import JavaScriptCore
     }
 
     func webViewDidStartLoad(_ webView: UIWebView) {
-        self.addCustomActions()
+       // self.addCustomActions()
     }
     func webViewDidFinishLoad(_ webView: UIWebView) {
         self.addCustomActions()

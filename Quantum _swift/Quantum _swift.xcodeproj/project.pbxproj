@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58913C6221056C3300B88437 /* UIDevice+info.m in Sources */ = {isa = PBXBuildFile; fileRef = 58913C5F21056C3200B88437 /* UIDevice+info.m */; };
+		58913C6321056C3300B88437 /* JHUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 58913C6121056C3300B88437 /* JHUserAgent.m */; };
 		58945DFC20FED7E3009B3659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58945DFB20FED7E3009B3659 /* AppDelegate.swift */; };
 		58945DFE20FED7E3009B3659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58945DFD20FED7E3009B3659 /* ViewController.swift */; };
 		58945E0120FED7E3009B3659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58945DFF20FED7E3009B3659 /* Main.storyboard */; };
@@ -15,11 +17,16 @@
 		58945E0920FED7EA009B3659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58945E0720FED7EA009B3659 /* LaunchScreen.storyboard */; };
 		5896DF5620FEEAEE0055D27C /* JSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5896DF5520FEEAEE0055D27C /* JSBridge.swift */; };
 		5896DF5920FEEB780055D27C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896DF5820FEEB780055D27C /* JavaScriptCore.framework */; };
+		5896DF83210035430055D27C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896DF82210035430055D27C /* UIKit.framework */; };
 		58DAFBE720FED94D00EC20C3 /* QuantumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAFBE620FED94D00EC20C3 /* QuantumViewController.swift */; };
 		58DAFBEB20FEDBD700EC20C3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DAFBEA20FEDBD700EC20C3 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58913C5E21056C3200B88437 /* UIDevice+info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+info.h"; sourceTree = "<group>"; };
+		58913C5F21056C3200B88437 /* UIDevice+info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+info.m"; sourceTree = "<group>"; };
+		58913C6021056C3200B88437 /* JHUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUserAgent.h; sourceTree = "<group>"; };
+		58913C6121056C3300B88437 /* JHUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUserAgent.m; sourceTree = "<group>"; };
 		58945DF820FED7E3009B3659 /* Quantum _swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quantum _swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58945DFB20FED7E3009B3659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58945DFD20FED7E3009B3659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +38,7 @@
 		5896DF5520FEEAEE0055D27C /* JSBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSBridge.swift; sourceTree = "<group>"; };
 		5896DF5820FEEB780055D27C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		5896DF8120FF41B70055D27C /* Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge_Header.h; sourceTree = "<group>"; };
+		5896DF82210035430055D27C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		58DAFBE620FED94D00EC20C3 /* QuantumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumViewController.swift; sourceTree = "<group>"; };
 		58DAFBEA20FEDBD700EC20C3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5896DF83210035430055D27C /* UIKit.framework in Frameworks */,
 				5896DF5920FEEB780055D27C /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58913C64210583EC00B88437 /* HELP */ = {
+			isa = PBXGroup;
+			children = (
+				58913C6021056C3200B88437 /* JHUserAgent.h */,
+				58913C6121056C3300B88437 /* JHUserAgent.m */,
+				58913C5E21056C3200B88437 /* UIDevice+info.h */,
+				58913C5F21056C3200B88437 /* UIDevice+info.m */,
+			);
+			path = HELP;
+			sourceTree = "<group>";
+		};
 		58945DEF20FED7E3009B3659 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +87,7 @@
 		58945DFA20FED7E3009B3659 /* Quantum _swift */ = {
 			isa = PBXGroup;
 			children = (
+				58913C64210583EC00B88437 /* HELP */,
 				5896DF8120FF41B70055D27C /* Bridge_Header.h */,
 				58DAFBEA20FEDBD700EC20C3 /* Profile.swift */,
 				5896DF5520FEEAEE0055D27C /* JSBridge.swift */,
@@ -85,6 +106,7 @@
 		5896DF5720FEEB780055D27C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5896DF82210035430055D27C /* UIKit.framework */,
 				5896DF5820FEEB780055D27C /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
@@ -161,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58913C6321056C3300B88437 /* JHUserAgent.m in Sources */,
 				58DAFBE720FED94D00EC20C3 /* QuantumViewController.swift in Sources */,
+				58913C6221056C3300B88437 /* UIDevice+info.m in Sources */,
 				5896DF5620FEEAEE0055D27C /* JSBridge.swift in Sources */,
 				58DAFBEB20FEDBD700EC20C3 /* Profile.swift in Sources */,
 				58945DFE20FED7E3009B3659 /* ViewController.swift in Sources */,

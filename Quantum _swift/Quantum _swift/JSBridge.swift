@@ -85,6 +85,7 @@ import JavaScriptCore
     
      func openNewWithFlag(data:Any)
     
+     func auth(data:Any)
 }
 
 

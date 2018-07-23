@@ -9,6 +9,6 @@
 #ifndef Bridge_Header_h
 #define Bridge_Header_h
 
-#import ""
+#import "JHUserAgent.h"
 
 #endif /* Bridge_Header_h */

@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = nav
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
-        
+        JHUserAgent.setUserAgentWithToken(nil)
         // Override point for customization after application launch.
         return true
     }
